@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="Js/script.js" defer></script>
+    <link rel="stylesheet" href="Css/normalize.css" />
+    <link rel="stylesheet" href="Css/style.css" />
+    <title>Assignemnt 3 Js</title>
+  </head>
+
+  <body>
+    <h1>Smooth Smoothy</h1>
+    <h2 class="firstH2">Smoothies Menu</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Smoothy Type</th>
+          <th>Size</th>
+          <th>Price</th>
+          <th>Add On's($1 for each)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Banana Smoothy</td>
+          <td>Small/Medium/Large</td>
+          <td>$4/$5/$6</td>
+          <td>Almonds/Yogurt/Cream</td>
+        </tr>
+        <tr>
+          <td>Strawberry Smoothy</td>
+          <td>Small/Medium/Large</td>
+          <td>$5/$6/$7</td>
+          <td>Almonds/Yogurt/Cream</td>
+        </tr>
+        <tr>
+          <td>Chocolate Smoothy</td>
+          <td>Small/Medium/Large</td>
+          <td>$6/$7/$8</td>
+          <td>Almonds/Yogurt/Cream</td>
+        </tr>
+        <tr>
+          <td>Peach Smoothy</td>
+          <td>Small/Medium/Large</td>
+          <td>$7/$8/$9</td>
+          <td>Almonds/Yogurt/Cream</td>
+        </tr>
+        <tr>
+          <td>Protein Smoothy</td>
+          <td>Small/Medium/Large</td>
+          <td>$8/$9/$10</td>
+          <td>Almonds/Yogurt/Cream</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <form id="smoothyForm">
+      <h2 class="secondH2">Please select your ingredients for your smoothy!</h2>
+      <label for="smoothyType">Smoothy Type:</label>
+      <select name="smoothyType" id="smoothyType">
+        <option value="" disabled selected>Please Select a Type</option>
+        <option value="Banana">Banana Smoothy</option>
+        <option value="Strawberry">Strawberry Smoothy</option>
+        <option value="Chocolate">Chocolate Smoothy</option>
+        <option value="Peach">Peach Smoothy</option>
+        <option value="Protein">Protein Smoothy</option></select
+      ><br />
+      <label for="smoothySize">Smoothy Size:</label><br />
+      <input type="radio" id="small" name="size" value="small" />
+      <label for="small">Small</label>
+      <input type="radio" id="medium" name="size" value="medium" />
+      <label for="medium">Medium</label>
+      <input type="radio" id="large" name="size" value="large" />
+      <label for="large">Large</label><br />
+
+      <label for="addOn">Extra Adding's:</label>
+      <select name="addOn" id="addOn">
+        <option value="" disabled selected>Select AddOn's</option>
+        <option value="almond">Almonds</option>
+        <option value="yogurt">Yogurt</option>
+        <option value="cream">Cream</option></select
+      ><br />
+      <label for="other">Other:</label>
+      <textarea
+        name="other"
+        id="other"
+        cols="30"
+        rows="10"
+        placeholder="Please let us know if there is any other things"
+      ></textarea
+      ><br />
+      <button class="submit">Order</button>
+    </form>
+  </body>
+</html>
